@@ -10,41 +10,62 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Homemade+Apple&display=swap"
       rel="stylesheet"
     />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="frame">
-        <section class="container-header">
-          <button class="header-btn">Add</button>
-          <h1 class="header-title">Todo Lists</h1>
-          <button class="header-btn clear">Clear</button>
-        </section>
+    <!-- Sebagi tempat untuk React Component berada -->
+    <div id="root"></div>
+    <script type="text/babel">
+      class App extends React.Component {
+        render() {
+          return (
+            <div class="container">
+              <div class="frame">
+                <section class="container-header">
+                  <button class="header-btn">Add</button>
+                  <h1 class="header-title">Todo Lists</h1>
+                  <button class="header-btn clear">Clear</button>
+                </section>
 
-        <section class="container-add">
-          <form action="" class="add-form">
-            <input type="text" name="todo" id="add-input" />
-            <button class="add-btn">Add</button>
-          </form>
-        </section>
+                <section class="container-add">
+                  <form action="" class="add-form">
+                    <input type="text" name="todo" id="add-input" />
+                    <button class="add-btn">Add</button>
+                  </form>
+                </section>
 
-        <section class="container-todos">
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-        </section>
-      </div>
-    </div>
+                <section class="container-todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
