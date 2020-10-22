@@ -100,3 +100,26 @@ html {
   border: unset;
   outline: unset;
 }
+
+.container-todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34px;
+  margin: 16 0 0;
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+
+  border-bottom: 1px solid red;
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
