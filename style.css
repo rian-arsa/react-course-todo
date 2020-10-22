@@ -36,3 +36,29 @@ html {
   border: 1px solid #484848;
   height: 100%;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", cursive;
+  padding: 20px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.header-title {
+  font-size: 3.6rem;
+  font-family: "Homemade Apple", cursive;
+  text-transform: lowercase;
+}
+
+.clear {
+  color: red;
+}
